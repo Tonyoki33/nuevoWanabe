@@ -369,6 +369,9 @@ h3 {
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
     grid-column-gap: 1px;
     grid-row-gap: 2px; }
+  main {
+    padding-top: 100px;
+    width: 760px; }
   .aside {
     display: none; }
   .aside_p {
