@@ -363,6 +363,25 @@ h3 {
     padding-left: 2rem;
     text-align: left; } }
 
+@media (max-width: 768px) {
+  #grid {
+    display: grid;
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+    grid-column-gap: 1px;
+    grid-row-gap: 2px; }
+  .aside {
+    display: none; }
+  .aside_p {
+    display: none; }
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #043057;
+    padding-left: 2rem;
+    text-align: left; } }
+
 /*Creamos el bucle para usar los valores del mapa*/
 .btn--continuar {
   background-color: #55acee; }
