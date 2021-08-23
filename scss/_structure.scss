@@ -22,8 +22,6 @@ header {
     width: 100%;
     position: fixed;
     background-color: rgb(68,  134, 194);
-
-
 }
 
 main {
@@ -44,11 +42,12 @@ main {
 /* Tu comunidad nunca estuvo + P + IMG*/
 
 .container {
-    padding: 23px 5px;
+    padding: 3rem 2rem;
     margin: 1.2rem 3rem;
     width: 100rem;
     display: flex; 
     flex-flow: column nowrap;
+    align-items: center;
     justify-content: center;    
     background-color: azure;
     border: 0.5rem solid rgb(8, 77, 138);

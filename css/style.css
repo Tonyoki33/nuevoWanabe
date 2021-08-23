@@ -31,11 +31,12 @@ main {
 
 /* Tu comunidad nunca estuvo + P + IMG*/
 .container {
-  padding: 23px 5px;
+  padding: 3rem 2rem;
   margin: 1.2rem 3rem;
   width: 100rem;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   justify-content: center;
   background-color: azure;
   border: 0.5rem solid #084d8a;
@@ -350,8 +351,11 @@ h3 {
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
     grid-column-gap: 1px;
     grid-row-gap: 2px; }
+  html {
+    font-size: 50%; }
   .aside {
-    display: none; }
+    display: none;
+    z-index: -1; }
   .aside_p {
     display: none; }
   h1 {
@@ -361,29 +365,12 @@ h3 {
     font-style: italic;
     color: #043057;
     padding-left: 2rem;
-    text-align: left; } }
-
-@media (max-width: 768px) {
-  #grid {
-    display: grid;
-    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
-    grid-column-gap: 1px;
-    grid-row-gap: 2px; }
-  main {
-    padding-top: 100px;
-    width: 760px; }
-  .aside {
-    display: none; }
-  .aside_p {
-    display: none; }
-  h1 {
-    font-size: 5rem;
-    letter-spacing: 2rem;
-    font-weight: 200;
-    font-style: italic;
-    color: #043057;
-    padding-left: 2rem;
-    text-align: left; } }
+    text-align: left; }
+  .container_box--carrousel {
+    margin: 1.2rem 3rem;
+    width: 67.5rem;
+    border: 0.5rem solid #084d8a;
+    border-top: 5rem solid #084d8a; } }
 
 /*Creamos el bucle para usar los valores del mapa*/
 .btn--continuar {
