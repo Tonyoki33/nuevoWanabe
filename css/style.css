@@ -351,6 +351,8 @@ h3 {
     grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
     grid-column-gap: 1px;
     grid-row-gap: 2px; }
+  main {
+    width: 768px; }
   html {
     font-size: 50%; }
   .aside {
@@ -371,6 +373,47 @@ h3 {
     width: 67.5rem;
     border: 0.5rem solid #084d8a;
     border-top: 5rem solid #084d8a; } }
+
+@media (max-width: 411px) {
+  #grid {
+    display: grid;
+    grid-template-areas: "nav nav nav" "main main main" "footer footer footer";
+    grid-column-gap: 1px;
+    grid-row-gap: 2px; }
+  main {
+    width: 411px; }
+  html {
+    font-size: 40%; }
+  .aside {
+    display: none;
+    z-index: -1; }
+  .aside_p {
+    display: none; }
+  .aside_p--size {
+    display: none; }
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #043057;
+    padding-left: 2rem;
+    text-align: left; }
+  .container_box--carrousel {
+    margin: 1.2rem 3rem;
+    width: 55rem;
+    border: 0.5rem solid #084d8a;
+    border-top: 5rem solid #084d8a; }
+  .container_box--color {
+    padding: 1rem 0.5rem;
+    margin: 1.2rem 3rem; }
+  .container {
+    padding: 1rem 0.5rem;
+    margin: 1.2rem 3rem;
+    width: 55rem; }
+  p {
+    padding: 0px;
+    margin: 10; } }
 
 /*Creamos el bucle para usar los valores del mapa*/
 .btn--continuar {
