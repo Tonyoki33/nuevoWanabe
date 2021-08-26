@@ -11,6 +11,8 @@ html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(41, 124, 197);
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -29,6 +31,13 @@ main {
     width: 1050px;
 }
 
+.container-fluid {
+    background-color:  rgb(41, 124, 197);
+}
+
+.navbar-toggler {
+    background-color:  rgb(41, 124, 197);
+}
 
 .container-2 {
     padding-top: 100px;

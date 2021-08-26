@@ -61,22 +61,24 @@
         width: 411px;
     }
 
+    .container-fluid {
+        margin-left: 0;
+        padding-left: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 411px;
+    }
+
     html {
         font-size: 40%;
     }
     
     .aside {
-        display: none; 
-        z-index: -1;  
+        display: none;
+        visibility: hidden; 
     }
 
-    .aside_p {
-        display: none;
-    }
-
-    .aside_p--size {
-        display: none;
-    } 
     
     h1 {
         font-size: 5rem;
@@ -103,7 +105,7 @@
     .container {
         padding: 1rem 2rem;
         margin: 1.2rem 12rem 1.2rem 2rem;
-        width: 60rem;       
+        width: 50rem;       
     }
 
     .container_box--tabla {
