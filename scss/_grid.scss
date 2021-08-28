@@ -58,7 +58,7 @@
 }
 
 .nav-link:hover {
-    background-color:lightskyblue;
+    background-image: linear-gradient(to left top,#0d6efd,#dceaff) ;
     display: flex;
     color: rgb(4, 48, 87);
     padding: 16px 13px;
@@ -94,9 +94,8 @@
             color: rgb(4, 48, 87);
         }
         a:hover {
-            background-color:lightskyblue;
+            background-image: linear-gradient(to left top,#0d6efd,#dceaff) ;
             display: flex;
-            color: rgb(4, 48, 87);
             padding: 16px 13px;
             width: 200px;
             height: 70px;
@@ -108,33 +107,40 @@
 /*-------------- Aside --------------------------------*/
 
 aside {
+    background-image: linear-gradient(to right top,rgba(4, 48, 87,0.3),rgb(4, 48, 87)) ;
     grid-area: aside;
     display: flex;
-    width: 290px;
+    flex-flow: row;
+    position: relative;
+    right: 0;
+    padding-top: 5rem;
+    width: 45vh;
     height: 100%;
     grid-row: 1/4;
-    padding: 80px 0px 0px 0px ;
-    margin: 0px;
-    background-color: rgb(4, 48, 87);
     color: lightyellow;
-  
+    z-index: 1;
 }
 
 .aside_p {
-    display: flex;
-    flex-flow: column;
-    text-align: left;
-    height: 12px;
-    align-content: left; 
-    margin: 0px;
-    padding: 0px;
-    font-size: 1.5rem;
-    background-color: rgb(4, 48, 87);
-    color: lightyellow;
+    padding: 5rem;
 }
 
+.aside_p--size {
+    margin: 0px;
+    padding: 35px;
+}
 
+.aside_p--animation {
+    margin-top: 2rem;
+    background-image: linear-gradient(to left top,rgba(4, 48, 87,0),rgba(4, 48, 87,0.3)) ;    
+    box-shadow: 4px 4px rgb(4, 48, 87);
+    z-index: 3;
+}
 
+.aside_p--animation:hover {
+    background-image: linear-gradient(to left top,#0d6efd,#dceaff) ;
+    cursor: default;
+}
 
 /* - - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - - - -  */
 
@@ -167,5 +173,6 @@ footer {
     background-image: linear-gradient(rgb(68,  134, 194), rgb(4, 48, 87));
     margin: 0;
     padding: 15px 0px;
+    z-index: 2;
 }
 
