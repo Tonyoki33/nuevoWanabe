@@ -292,7 +292,7 @@ aside {
   position: relative;
   right: 0;
   padding-top: 5rem;
-  width: 45vh;
+  width: 43vh;
   height: 100%;
   grid-row: 1/4;
   color: lightyellow;
@@ -303,7 +303,7 @@ aside {
 
 .aside_p--size {
   margin: 0px;
-  padding: 35px; }
+  padding: 3rem; }
 
 .aside_p--animation {
   margin-top: 2rem;
