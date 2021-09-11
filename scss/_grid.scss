@@ -1,5 +1,7 @@
 @import "variables"; 
-/* - - - - - - - - - - -  GRIDS - - - - - - - - - -  */
+
+
+// Grids
 
 #grid {
     display: grid;
@@ -10,6 +12,17 @@
     grid-column-gap: 1px ;
     grid-row-gap: 2px;
 
+}
+
+#grid_center {    
+    padding-top: 40px;
+    justify-content: center;
+    width: 95vw;
+}
+
+.grid_section--1 {
+    justify-content: center;
+    width: 100vw;
 }
 
 #grid_contact {
@@ -27,13 +40,11 @@
 }
 
 .container-fluid {
-    display: block;
+    display: flex;
     border-bottom: solid rgb(4, 48, 87);
     background-color: $back;    
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem;
-    padding-left: 3rem;
-    
 }
 
 #navbarText {
@@ -104,7 +115,7 @@
     }
 }
 
-/*-------------- Aside --------------------------------*/
+// Aside
 
 aside {
     background-image: linear-gradient(to right top,rgba(4, 48, 87,0.3),rgb(4, 48, 87)) ;
@@ -133,7 +144,7 @@ aside {
 .aside_p--animation {
     margin-top: 2rem;
     background-image: linear-gradient(to left top,rgba(4, 48, 87,0),rgba(4, 48, 87,0.3)) ;    
-    box-shadow: 4px 4px rgb(4, 48, 87);
+    box-shadow: 4px 4px $shadows;
     z-index: 3;
 }
 
@@ -142,7 +153,7 @@ aside {
     cursor: default;
 }
 
-/* - - - - - - - - - - - - - - - Footer - - - - - - - - - - - - - - - - - - -  */
+// Footer styles
 
 
 footer {
@@ -154,7 +165,7 @@ footer {
     font-size: 2rem;
     border-top: solid rgb(4, 48, 87);
     background-color: transparent;
-    color: seashell;
+    color: $back_container;
     .footer_ul {
         margin-right: 10px;
         padding: 0px 4px 0px 20px;
@@ -164,6 +175,8 @@ footer {
         grid-area: nav;
 
         .footer_li {
+            color: $back_container;
+            text-decoration: none;
             padding: 0px 4px 0px 30px;    
         }
     } 

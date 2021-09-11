@@ -10,49 +10,40 @@
 html {
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(41, 124, 197);
     width: 100%;
     height: 100%;
 }
 
 body {
-    background-color: rgb(41, 124, 197);
+    background-image: linear-gradient(to right top,$back,$back_claro);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
     z-index: 100;
     width: 100%;
     position: fixed;
-    background-color: rgb(68,  134, 194);
 }
 
 main {
-    padding-top: 100px;
+    padding-top: 4rem;
     width: 1050px;
 }
 
 .container-fluid {
-    background-color:  rgb(41, 124, 197);
+    background-color:  $nav_color;
 }
 
 .navbar-toggler {
-    background-color:  rgb(41, 124, 197);
+    background-color:  $nav_color;
 }
 
-.container-2 {
-    padding-top: 100px;
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
-}
-
-/* Tu comunidad nunca estuvo + P + IMG*/
+// Containers Area
 
 .container {
-    padding: 3rem 2rem;
-    margin: 1.2rem 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100rem;
     display: flex; 
     flex-flow: column nowrap;
@@ -67,66 +58,75 @@ main {
     }
 }
 
+.container-2 {
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .container_box--nosotros {
-    padding: 23px 5px;
-    margin: 1.2rem 3rem;
-    width: 100rem;
     display: flex; 
     flex-flow: column nowrap;
     justify-content: center;    
     background-color: lightblue;
     border: 0.5rem solid rgb(8, 77, 138);
     border-top: 5rem solid rgb(8, 77, 138);
+}
 
+// Img transition and styles properties
+
+// Images position 
+
+.posicionImagen {
+    width: 30rem;
+    background-color: transparent;
+    padding: 2rem 4rem ;
+    margin: 1rem 5rem;
+}
+
+// Image Animation 
+
+div.imgAnim:hover {
+    transform: scale(1.1);
+}
+
+// Carousel css properties
+
+#carouselExampleControls {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 18rem ;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
 }
 
 .container_box--carrousel {
-    margin: 1.2rem 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     width: 100rem;
     border: 0.5rem solid rgb(8, 77, 138);
     border-top: 5rem solid rgb(8, 77, 138);
 }
 
+
 .container_box--align {
-    margin: 1.2rem 3rem;
-    width: 100rem;
+    justify-items: center;
+    align-items: flex-start;
     background-color: moccasin;
     border: 0.5rem solid rgb(8, 77, 138);
     border-top: 5rem solid rgb(8, 77, 138);
-    justify-items: center;
-    align-items: flex-start;
 
     p.container-3 {
         background-color: none;
     }
 }
 
-/* Trabajo de P */
 
-
-
-
-p  {
-    display: flex;
-    flex-flow: column;
-    padding: 11px 111px 12px 104px;
-    margin: 5px 40px 5px 5px;
-    font-size: 2rem;
-}
-
-.posicionImagen {
-    padding-left: 11rem;
-    width: 30rem;
-    background-color: transparent;
-}
-
-/* ANIMACIONES */
-
-div.imgAnim:hover {
-    transform: scale(1.1);
-}
-
-/* - - - - - - - - - - - - - - -  Tablas - - - - - - - - - - - - - - - - - - - -  */
+// Table styles
 
 table {
     padding: 1rem;
@@ -156,7 +156,7 @@ table {
     }
 }
 
-/* - - - - - - - - - - - - - - - Formularios - - - - - - - - - - - - - - - - - - -  */
+// Form porperties
 
 .form-class {
     margin: 1rem 3rem;
@@ -205,8 +205,6 @@ table {
     margin: 1rem 10rem;
     font-size: 1.5rem;
 }
-  
-
 
 form div.sendButton:hover {
     padding: 0px 0px;
@@ -218,18 +216,35 @@ form div.sendButton:hover {
     background-color: rgb(8, 77, 138);
 }
 
-/* ------------------------------- Ul sec ------------------------------------ */
+// ul sections
 
 .ul_servicios {
-    padding: 2rem 15rem;
+    margin-bottom: 5rem;
+    padding: 2rem 15rem 5rem 15rem;
     font-size: 2rem;
+    border-bottom: solid 1px $shadows;
     display: flex;
     flex-flow: column nowrap;
     list-style-image: url(https://img.flaticon.com/icons/png/512/61/61222.png?size=20x20f&pad=10,10,10,10&ext=png&bg=);
+    color: $shadows;
 }
 
+.ul_medio {
+    margin-bottom: 3rem;
+    margin-left: 2em;
+    background-image: linear-gradient($back,$back_claro);
+    padding: 5rem;
+    padding-left: 2rem;
+    box-shadow: 4px 4px $shadows;
+    color: $back_container;
 
-/* Spinner */
+        
+    li {
+        margin-bottom: 2rem;
+    }
+}
+
+// Loading page containers
 
 .container_box--spin {
     padding: 23px 5px;
