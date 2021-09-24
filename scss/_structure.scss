@@ -27,16 +27,107 @@ header {
 }
 
 main {
-    padding-top: 4rem;
-    width: 1050px;
+    padding-top: 5rem;
+    width: 100%;
 }
+
+
+
+// Nav
 
 .container-fluid {
     background-color:  $nav_color;
 }
 
+.navbar {
+    padding: 0px 0px;
+}
+
+.container-fluid {
+    display: flex;
+    border-bottom: solid rgb(4, 48, 87);
+    background-color: $back;    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+#navbarText {
+    padding-left: 3rem;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+}
+
+.nav-link {
+    margin-top: 0px;
+    padding: 0px 10px 0px 10px;
+    font-weight: 400;
+    display: flex;
+    list-style-type: none;
+    grid-area: nav;
+}
+
+.active {
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    background-image: linear-gradient(to left top,#0d6efd,#dceaff) ;
+    display: flex;
+    color: rgb(4, 48, 87);
+    padding: 16px 13px;
+    width: 200px;
+    height: 70px;
+    align-items: center;
+}
+
+.nav_menu {
+    height: 7rem;
+    display: block;
+    border-bottom: solid rgb(4, 48, 87);
+
+    .nav_ul {
+        margin-top: 0px;
+        padding: 0px 4px 0px 20px;
+        font-weight: 600;
+        display: flex;
+        list-style-type: none;
+        grid-area: nav;
+        
+        li {
+            padding: 0px 50px;
+            margin: 0;
+        }
+
+        a {
+            font-size: 3rem;
+            padding: 18px 13px;
+            display: flex;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(4, 48, 87);
+        }
+        a:hover {
+            background-image: linear-gradient(to left top,#0d6efd,#dceaff) ;
+            display: flex;
+            padding: 16px 13px;
+            width: 200px;
+            height: 70px;
+        }
+
+    }
+}
+
+
 .navbar-toggler {
     background-color:  $nav_color;
+}
+
+// section
+
+section {
+    padding: 1rem 5rem;
 }
 
 // Containers Area
@@ -44,7 +135,6 @@ main {
 .container {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    width: 100rem;
     display: flex; 
     flex-flow: column nowrap;
     align-items: center;

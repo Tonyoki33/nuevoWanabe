@@ -5,19 +5,13 @@
 
 #grid {
     display: grid;
-    grid-template-areas: 
-    "nav nav nav"
-    "main main aside"
-    "footer footer footer";
-    grid-column-gap: 1px ;
-    grid-row-gap: 2px;
-
+    grid-template-columns: 80% 20%;
 }
+
 
 #grid_center {    
     padding-top: 40px;
     justify-content: center;
-    width: 95vw;
 }
 
 .grid_section--1 {
@@ -35,99 +29,23 @@
     grid-row-gap: 2px;
 }
 
-.navbar {
-    padding: 0px 0px;
-}
 
-.container-fluid {
-    display: flex;
-    border-bottom: solid rgb(4, 48, 87);
-    background-color: $back;    
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-}
+// Section
 
-#navbarText {
-    padding-left: 3rem;
-}
-
-.navbar-brand {
-    font-size: 3rem;
-}
-
-.nav-link {
-    margin-top: 0px;
-    padding: 0px 10px 0px 10px;
-    font-weight: 400;
-    display: flex;
-    list-style-type: none;
-    grid-area: nav;
-}
-
-.active {
-    font-weight: 600;
-}
-
-.nav-link:hover {
-    background-image: linear-gradient(to left top,#0d6efd,#dceaff) ;
-    display: flex;
-    color: rgb(4, 48, 87);
-    padding: 16px 13px;
-    width: 200px;
-    height: 70px;
-    align-items: center;
-}
-
-.nav_menu {
-    height: 7rem;
-    display: block;
-    border-bottom: solid rgb(4, 48, 87);
-
-    .nav_ul {
-        margin-top: 0px;
-        padding: 0px 4px 0px 20px;
-        font-weight: 600;
-        display: flex;
-        list-style-type: none;
-        grid-area: nav;
-        
-        li {
-            padding: 0px 50px;
-            margin: 0;
-        }
-
-        a {
-            font-size: 3rem;
-            padding: 18px 13px;
-            display: flex;
-            text-align: center;
-            text-decoration: none;
-            color: rgb(4, 48, 87);
-        }
-        a:hover {
-            background-image: linear-gradient(to left top,#0d6efd,#dceaff) ;
-            display: flex;
-            padding: 16px 13px;
-            width: 200px;
-            height: 70px;
-        }
-
-    }
+section {
+    grid-column:1/2 ;
 }
 
 // Aside
 
 aside {
+    grid-column: 2/3;
     background-image: linear-gradient(to right top,rgba(4, 48, 87,0.3),rgb(4, 48, 87)) ;
-    grid-area: aside;
     display: flex;
     flex-flow: row;
     position: relative;
     right: 0;
     padding-top: 5rem;
-    width: 43vh;
-    height: 100%;
-    grid-row: 1/4;
     color: lightyellow;
     z-index: 1;
 }
@@ -157,7 +75,8 @@ aside {
 
 
 footer {
-    grid-area:footer;
+    grid-column: 1/3;
+    grid-row: 2/3;
     margin: 0rem;
     padding: 4rem 0rem 0rem 2rem;
     height: 100%;
